@@ -10,7 +10,7 @@
    </thead>
    <tbody>
      <% @cocktails.each do |cocktail| %>
-       <tr>
+       <tr scope='row'>
          <td><%= cocktail.name %></td>
          <td><%= link_to 'Show', cocktail %></td>
        </tr>

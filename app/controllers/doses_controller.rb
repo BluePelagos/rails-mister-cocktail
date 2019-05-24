@@ -25,6 +25,8 @@ class DosesController < ApplicationController
     redirect_to cocktail_path(@cocktail)
   end
 
+  private
+
   def dose_params
     params.require(:dose).permit(:description, :ingredient)
   end
