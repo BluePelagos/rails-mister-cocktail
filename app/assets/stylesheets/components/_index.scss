@@ -7,7 +7,7 @@
 
 
 .banner {
-  background-image: url('cocktail_background.jpg');
+  background-image: image-url('cocktail_background.jpg');
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -79,7 +79,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: url('drink.jpg');
+  background-image: image-url('drink.jpg');
   background-size: cover;
   height: 200px;
   color: white;
