@@ -5,7 +5,7 @@ class CocktailsController < ApplicationController
 
   def show
     @cocktail = Cocktail.find(params[:id])
-    @dose = Dose.new
+    @dose = Dose.new # added this so that its available to _new.html.erb called from show.html.erb
   end
 
   def new
