@@ -2,13 +2,13 @@
 <div class="banner">
 
   <div class="container" id="index">
-   <h1>All Cocktails</h1>
+   <h1>Cocktails</h1>
       <div class="cards">
         <% @cocktails.each do |cocktail| %>
             <div class="card-category">
                 <div class="inner-card">
-                  <h2><%= cocktail.name %></h2>
-                  <p><%= link_to 'Show', cocktail_path(cocktail), :class => "btn btn-primary" %></p>
+                  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+                  <!-- <p><%= link_to 'Show', cocktail_path(cocktail), :class => "btn btn-primary" %></p> -->
                 </div>
             </div>
         <% end %>

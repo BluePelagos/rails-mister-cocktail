@@ -35,7 +35,15 @@
 
 .inner-card {
   position: absolute;
-  top: 65px;
+  top: 160px;
+}
+
+.inner-card a {
+  color: white;
+}
+
+.inner-card a:hover {
+  text-decoration: none;
 }
 
 .inner-card p {

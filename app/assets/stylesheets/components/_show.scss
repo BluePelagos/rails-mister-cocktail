@@ -16,9 +16,13 @@ body {
 
 .card-show .card-show-infos {
   padding: 16px;
-  // display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  // align-items: flex-end;
   position: relative;
+}
+
+.ingredient-table {
+  width: 600px;
 }
 
