@@ -1,0 +1,24 @@
+body {
+  background-color: #9e9e9e38;
+}
+
+.card-show {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-show > img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-show .card-show-infos {
+  padding: 16px;
+  // display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
