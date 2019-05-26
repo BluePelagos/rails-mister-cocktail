@@ -14,15 +14,24 @@ body {
   object-fit: cover;
 }
 
-.card-show .card-show-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  // align-items: flex-end;
-  position: relative;
-}
+// #card-show .card-show-infos {
+//   padding: 16px;
+//   display: flex;
+//   justify-content: space-between;
+//   // align-items: flex-end;
+//   position: relative;
+// }
 
 .ingredient-table {
-  width: 600px;
+  // width: 350px;
+  margin: 10px auto;
 }
 
+.ingredient-list {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.select2 {
+width:100%!important;
+}

@@ -1,21 +1,18 @@
-<div class=ingredient-table>
-<p>Add a new ingredient</p>
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <% if @dose.errors.any? %>
-    <div class="errors-container">
-      <ul>
-        <% @dose.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
+<div class="ingredient-table">
+  <p>Add a new ingredient</p>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <% if @dose.errors.any? %>
+      <div class="errors-container">
+        <ul>
+          <% @dose.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.submit "Add Ingredient", class: "btn btn-primary" %>
   <% end %>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.submit "Add Ingredient", class: "btn btn-primary" %>
-
-<% end %>
-  <hr>
-
 </div>
 
