@@ -14,14 +14,6 @@ body {
   object-fit: cover;
 }
 
-// #card-show .card-show-infos {
-//   padding: 16px;
-//   display: flex;
-//   justify-content: space-between;
-//   // align-items: flex-end;
-//   position: relative;
-// }
-
 .ingredient-table {
   // width: 350px;
   margin: 10px auto;
@@ -34,4 +26,8 @@ body {
 
 .select2 {
 width:100%!important;
+}
+
+a:hover {
+  text-decoration: none;
 }
