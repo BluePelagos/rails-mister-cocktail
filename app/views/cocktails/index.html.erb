@@ -6,25 +6,22 @@
     <h1>Cocktails</h1>
   </div>
 
-
-
   <div class="container">
-      <div class="cards mt-3">
-          <% @cocktails.each do |cocktail| %>
-            <div class="card-category">
+    <div class="cards mt-3">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category">
 
-              <% if cocktail.photo.present? %>
-              <%= cl_image_tag cocktail.photo, :height=>200, :crop=>"scale" %>
-              <% end %>
-
-              <!-- <div class="inner-card"> -->
-                <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-              <!-- </div> -->
-
-            </div>
+          <% if cocktail.photo.present? %>
+          <%= cl_image_tag cocktail.photo, :height=>200, :crop=>"fill" %>
           <% end %>
-      </div>
-      <br>
+
+          <!-- <div class="inner-card"> -->
+            <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+          <!-- </div> -->
+        </div>
+      <% end %>
+    </div>
+    <br>
   </div>
 
 </div>
