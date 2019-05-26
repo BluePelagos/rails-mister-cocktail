@@ -5,8 +5,13 @@
   <br>
   <h2>&nbsp;<%= @cocktail.name %></h2>
   <hr>
+
   <div class="card-show">
-    <%= image_tag("cocktail.jpg") %>
+
+    <% if @cocktail.photo.present? %>
+      <%= cl_image_tag @cocktail.photo, crop: :fit, height: 450, width: 500, alt: @cocktail.name, class: 'photo' %>
+    <% end %>
+
     <div class="container">
       <div class="row">
         <div class="col-sm">

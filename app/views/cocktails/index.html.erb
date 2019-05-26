@@ -1,18 +1,29 @@
 
 <div class="top">
+
+
   <div class="banner text-center">
     <h1>Cocktails</h1>
   </div>
+
+
+
   <div class="container">
       <div class="cards mt-3">
+
         <% @cocktails.each do |cocktail| %>
+          <% if @cocktail.photo.present? %>
+            <%= cl_image_tag @cocktail.photo, crop: :fit, height: 450, width: 500, alt: @cocktail.name %>
+          <% end %>
             <div class="card-category">
-                <div class="inner-card">
-                  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-                </div>
+              <div class="inner-card">
+                <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+              </div>
             </div>
         <% end %>
       </div>
       <br>
   </div>
+
+
 </div>
