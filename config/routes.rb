@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   end
     delete 'doses/:id', to: 'doses#destroy', as: 'dose'
     root to: 'cocktails#index'
+    delete 'cocktails/:id', to: 'cocktails#destroy', as: 'cocktail_delete'
 end
