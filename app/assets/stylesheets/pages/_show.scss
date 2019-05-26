@@ -1,0 +1,30 @@
+
+.card-show {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-show > img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ingredient-table {
+  // width: 350px;
+  margin: 10px auto;
+}
+
+.ingredient-list {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.select2 {
+width:100%!important;
+}
+
+a:hover {
+  text-decoration: none;
+}
