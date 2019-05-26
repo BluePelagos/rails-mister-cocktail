@@ -11,7 +11,7 @@
       </div>
     <% end %>
       <%= f.input :description %>
-      <%= f.association :ingredient %>
+      <%= f.association :ingredient, as: :select, collection: Ingredient.all.order(:name) %>
       <%= f.submit "Add Ingredient", class: "btn btn-primary" %>
   <% end %>
 </div>
