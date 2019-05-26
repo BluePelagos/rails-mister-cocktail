@@ -1,14 +1,14 @@
 
-<div class="container" >
+<div class="container">
   <br>
   <br>
   <br>
-  <h2><%= @cocktail.name %></h2>
+  <h2>&nbsp;<%= @cocktail.name %></h2>
+  <hr>
   <div class="card-show">
     <%= image_tag("cocktail.jpg") %>
     <div class="container">
       <div class="row">
-
         <div class="col-sm">
           <div class="ingredient-list">
             <p><strong>Ingredient List:</strong></>
@@ -18,11 +18,8 @@
                 <% end %>
               </li>
             <% end %>
-            <br>
-            <p></p>
           </div>
         </div>
-
         <div class="col-sm">
           <%= render "doses/new" %>
         </div>
