@@ -42,13 +42,15 @@
   grid-gap: 16px;
 }
 
+   // display: flex;
+  // justify-content: center;
+  // position: relative;
+
 .card-category {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  background-image: image-url('drink.jpg');
-  background-size: cover;
-  height: 200px;
+  text-align: center;
+}
+
+.card-category a {
   color: white;
 }
 
