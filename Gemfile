@@ -39,6 +39,9 @@ gem 'faker'
 gem 'cloudinary', '~> 1.9.1'
 
 gem 'carrierwave', '~> 1.2'
+
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
